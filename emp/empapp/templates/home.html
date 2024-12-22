@@ -8,6 +8,17 @@
 
 {% include 'main.html' %}
 
-<h1>Welcome to Home Page!</h1>
+<h2 align="center">Employees Details!</h2>
+
+{% for emp in employee %}
+<h3>{{emp.id}}</h3>
+   <h3>{{emp.ename}}</h3>
+   <h4>{{emp.dept}}</h4>
+   <h4>{{emp.role}}</h4>
+    <h4>{{emp.salary}}</h4>
+
+    {% endfor %}
+
+
 
 {% endblock content %}
