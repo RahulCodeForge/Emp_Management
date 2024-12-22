@@ -4,5 +4,4 @@ from django.shortcuts import render
 
 
 def home(request):
-
-    employee = Employee.objects.all()
+    return render(request,'home.html')
